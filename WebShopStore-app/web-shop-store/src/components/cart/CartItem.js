@@ -29,7 +29,7 @@ class CartItem extends Component {
 
     return (
       <React.Fragment>
-        {/* <div className="img-wrapper">
+        <div className="img-wrapper">
           <img className="img-fluid" src={item.picture} alt={item.name} />
         </div>
         <h4 className="name">{item.name}</h4>
@@ -55,7 +55,7 @@ class CartItem extends Component {
           onClick={this.onClick.bind(this, item.id)}
         >
           &#xd7;
-        </button> */}
+        </button>
       </React.Fragment>
     );
   }
