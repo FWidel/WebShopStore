@@ -18,7 +18,7 @@ class Cart extends Component {
 
   render() {
     const { isOpen, cartItems } = this.props.cart;
-    console.log(this.props);
+    console.log(this.props, "Cart.js");
     return (
       <div className={`cart ${!isOpen ? 'transparent' : ''}`}>
         <div className={`cart-inside ${isOpen ? 'active' : ''}`}>
@@ -35,6 +35,7 @@ class Cart extends Component {
                 </h3>
               ) : (
                 <ul>
+                  {console.log(cartItems, "cartItems")}
                   {cartItems.map(item => (
                     <li key={uuid()}>
                       <CartItem item={item} />

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 
-import CartIcon from '../cart/CartItem';
+import CartContainer from '../cart/CartContainer';
 
 class Navbar extends Component {
   state = {
@@ -32,7 +32,7 @@ class Navbar extends Component {
             className="btn btn-link navbar-brand">
            Graphics shop
           </button>
-          <CartIcon />
+          <CartContainer />
         </div>
       </nav>
     );

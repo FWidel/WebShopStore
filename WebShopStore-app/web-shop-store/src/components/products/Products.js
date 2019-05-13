@@ -12,7 +12,7 @@ class Products extends Component {
         pageOfItems: []
     };
 
-    componentWillMount() {
+    componentDidMount() {
         var fakeProducts = [
             {
                 "picture": "https://img.freepik.com/free-vector/world-graphics-day-background_23-2147788754.jpg?size=338&ext=jpg",

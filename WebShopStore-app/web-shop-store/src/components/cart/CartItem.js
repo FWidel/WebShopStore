@@ -25,12 +25,11 @@ class CartItem extends Component {
   };
 
   render() {
-    console.log(this.props, "test");
     const { item } = this.props;
 
     return (
       <React.Fragment>
-        <div className="img-wrapper">
+        {/* <div className="img-wrapper">
           <img className="img-fluid" src={item.picture} alt={item.name} />
         </div>
         <h4 className="name">{item.name}</h4>
@@ -56,7 +55,7 @@ class CartItem extends Component {
           onClick={this.onClick.bind(this, item.id)}
         >
           &#xd7;
-        </button>
+        </button> */}
       </React.Fragment>
     );
   }

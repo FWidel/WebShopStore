@@ -19,7 +19,7 @@ class Product extends Component {
     open: false
   };
   addClick = product => {
-    console.log(this.props);
+    console.log(product);
     this.setState({ open: true });
     const { addItem } = this.props;
     addItem(product);

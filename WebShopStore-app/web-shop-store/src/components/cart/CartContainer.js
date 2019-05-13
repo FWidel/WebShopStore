@@ -26,7 +26,7 @@ class CartContainer extends Component {
   }
 }
 
-CartIcon.propTypes = {
+CartContainer.propTypes = {
   showCart: PropTypes.func.isRequired
 };
 
