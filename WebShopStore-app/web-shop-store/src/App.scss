@@ -91,6 +91,11 @@ body {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
+    @keyframes slide {
+      from { background-position: 0 0; }
+      to { background-position: -50px 50px; }
+  }
+
 .colors .color {
   height: 13px;
   width: 13px;
@@ -101,23 +106,6 @@ body {
   box-shadow: 3px 4px 3px 0px rgba(50, 50, 50, 0.5);
   list-style-type: none;
   display: inline-block; }
-  .colors .color.red {
-    background-color: #ff0000; }
-  .colors .color.pink {
-    background-color: #ffa4b4; }
-  .colors .color.black {
-    background-color: #000; }
-  .colors .color.white {
-    background-color: #fff; }
-  .colors .color.blue {
-    background-color: #4f7eff; }
-  .colors .color.gray {
-    background-color: #a8a8a8; }
-  .colors .color.beige {
-    background-color: #ff9a71; }
-  .colors .color.brown {
-    background-color: #632e1a; }
-  .color
 
 .navbar {
   -webkit-transition: all 0.3s linear;
@@ -197,7 +185,8 @@ body {
       font-size: 12px; } }
 
 .header {
-  background: url(../src/img/banner_1024.jpg) no-repeat  center;
+  // animation: slide 5s linear infinite alternate;
+  background: url(../src/img/banner_1024.jpg) no-repeat center;
   background-size: cover;
   min-height: 100vh;
   max-height: 100vh; }
@@ -420,3 +409,18 @@ body {
   font-size: 13px; }
   .footer p {
     margin-bottom: 5px; }
+
+
+    .scroll-link {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .mouse {
+      max-width: 2.5rem;
+      width: 100%;
+      height: auto;
+    } 
+    
+    

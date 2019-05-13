@@ -20,7 +20,7 @@ class CartContainer extends Component {
           </span>
           <span className="sr-only">products</span>
         </button>
-        <p>{totalPrice} €</p>
+        <p>{totalPrice} zł</p>
       </div>
     );
   }

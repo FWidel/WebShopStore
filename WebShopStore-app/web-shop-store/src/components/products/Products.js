@@ -4,8 +4,7 @@ import { connect } from 'react-redux';
 import Product from './Product';
 import Pagination from './Pagination';
 import Spinner from '../page/Spinner';
-import { object } from 'prop-types';
-
+import fakeProducts from './fakeProduct';
 class Products extends Component {
     state = {
         products: [],
@@ -13,130 +12,7 @@ class Products extends Component {
     };
 
     componentDidMount() {
-        var fakeProducts = [
-            {
-                "picture": "https://img.freepik.com/free-vector/world-graphics-day-background_23-2147788754.jpg?size=338&ext=jpg",
-                "name": "World graphics day",
-                "price": "1020",
-                "sizes": [
-                    "320px"
-                ]
-            },
-            {
-                "picture": "https://images.ctfassets.net/1khq4uysbvty/1cN4JsEdKfizRvqQUbBbZc/4ac86d40c3f1bfd604406ba180fdcebe/graphic-design-hero.png",
-                "name": "Figma",
-                sizes: [
-                    "720px",
-                    "1040px"
-                ],
-                "price": "300"
-            },
-            {
-                "picture": "https://images.ctfassets.net/1khq4uysbvty/1cN4JsEdKfizRvqQUbBbZc/4ac86d40c3f1bfd604406ba180fdcebe/graphic-design-hero.png",
-                "name": "Figma",
-                sizes: [
-                    "720px",
-                    "1040px"
-                ],
-                "price": "300"
-            },
-            {
-                "picture": "https://images.ctfassets.net/1khq4uysbvty/1cN4JsEdKfizRvqQUbBbZc/4ac86d40c3f1bfd604406ba180fdcebe/graphic-design-hero.png",
-                "name": "Figma",
-                sizes: [
-                    "720px",
-                    "1040px"
-                ],
-                "price": "300"
-            },
-            {
-                "picture": "https://images.ctfassets.net/1khq4uysbvty/1cN4JsEdKfizRvqQUbBbZc/4ac86d40c3f1bfd604406ba180fdcebe/graphic-design-hero.png",
-                "name": "Figma",
-                sizes: [
-                    "720px",
-                    "1040px"
-                ],
-                "price": "300"
-            },
-            {
-                "picture": "https://images.ctfassets.net/1khq4uysbvty/1cN4JsEdKfizRvqQUbBbZc/4ac86d40c3f1bfd604406ba180fdcebe/graphic-design-hero.png",
-                "name": "Figma",
-                sizes: [
-                    "720px",
-                    "1040px"
-                ],
-                "price": "300"
-            },
-            {
-                "picture": "https://images.ctfassets.net/1khq4uysbvty/1cN4JsEdKfizRvqQUbBbZc/4ac86d40c3f1bfd604406ba180fdcebe/graphic-design-hero.png",
-                "name": "Figma",
-                sizes: [
-                    "720px",
-                    "1040px"
-                ],
-                "price": "300"
-            },
-            {
-                "picture": "https://images.ctfassets.net/1khq4uysbvty/1cN4JsEdKfizRvqQUbBbZc/4ac86d40c3f1bfd604406ba180fdcebe/graphic-design-hero.png",
-                "name": "Figma",
-                sizes: [
-                    "720px",
-                    "1040px"
-                ],
-                "price": "300"
-            },
-            {
-                "picture": "https://images.ctfassets.net/1khq4uysbvty/1cN4JsEdKfizRvqQUbBbZc/4ac86d40c3f1bfd604406ba180fdcebe/graphic-design-hero.png",
-                "name": "Figma",
-                sizes: [
-                    "720px",
-                    "1040px"
-                ],
-                "price": "300"
-            },
-            {
-                "picture": "https://images.ctfassets.net/1khq4uysbvty/1cN4JsEdKfizRvqQUbBbZc/4ac86d40c3f1bfd604406ba180fdcebe/graphic-design-hero.png",
-                "name": "Figma",
-                sizes: [
-                    "720px",
-                    "1040px"
-                ],
-                "price": "300"
-            },
-            {
-                "picture": "https://images.ctfassets.net/1khq4uysbvty/1cN4JsEdKfizRvqQUbBbZc/4ac86d40c3f1bfd604406ba180fdcebe/graphic-design-hero.png",
-                "name": "Figma",
-                sizes: [
-                    "720px",
-                    "1040px"
-                ],
-                "price": "300"
-            },
-            {
-                "picture": "https://images.ctfassets.net/1khq4uysbvty/1cN4JsEdKfizRvqQUbBbZc/4ac86d40c3f1bfd604406ba180fdcebe/graphic-design-hero.png",
-                "name": "Figma",
-                sizes: [
-                    "720px",
-                    "1040px"
-                ],
-                "price": "300"
-            },
-            {
-                "picture": "https://images.ctfassets.net/1khq4uysbvty/1cN4JsEdKfizRvqQUbBbZc/4ac86d40c3f1bfd604406ba180fdcebe/graphic-design-hero.png",
-                "name": "Figma",
-                sizes: [
-                    "720px",
-                    "1040px"
-                ],
-                "price": "300"
-            }];
-
-
-
-
-
         this.setState({ products: fakeProducts });
-
     }
 
     onChangePage = pageOfItems => this.setState({ pageOfItems: pageOfItems });
