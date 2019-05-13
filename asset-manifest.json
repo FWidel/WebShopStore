@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/web-shop-store/static/css/main.16228218.chunk.css",
-    "main.js": "/web-shop-store/static/js/main.fc522b85.chunk.js",
-    "main.js.map": "/web-shop-store/static/js/main.fc522b85.chunk.js.map",
-    "runtime~main.js": "/web-shop-store/static/js/runtime~main.c18e15c5.js",
-    "runtime~main.js.map": "/web-shop-store/static/js/runtime~main.c18e15c5.js.map",
-    "static/css/2.ffe9479d.chunk.css": "/web-shop-store/static/css/2.ffe9479d.chunk.css",
-    "static/js/2.06753e03.chunk.js": "/web-shop-store/static/js/2.06753e03.chunk.js",
-    "static/js/2.06753e03.chunk.js.map": "/web-shop-store/static/js/2.06753e03.chunk.js.map",
-    "index.html": "/web-shop-store/index.html",
-    "precache-manifest.d624ec61caff8730d06e89ff232533eb.js": "/web-shop-store/precache-manifest.d624ec61caff8730d06e89ff232533eb.js",
-    "service-worker.js": "/web-shop-store/service-worker.js",
-    "static/css/2.ffe9479d.chunk.css.map": "/web-shop-store/static/css/2.ffe9479d.chunk.css.map",
-    "static/css/main.16228218.chunk.css.map": "/web-shop-store/static/css/main.16228218.chunk.css.map",
-    "static/media/App.scss": "/web-shop-store/static/media/banner_1024.accf9e47.jpg",
-    "static/media/all.min.css": "/web-shop-store/static/media/fa-solid-900.f14c3b2f.ttf"
+    "main.css": "/WebShopStore/static/css/main.d606b191.chunk.css",
+    "main.js": "/WebShopStore/static/js/main.52cbb896.chunk.js",
+    "main.js.map": "/WebShopStore/static/js/main.52cbb896.chunk.js.map",
+    "runtime~main.js": "/WebShopStore/static/js/runtime~main.ee00cc3f.js",
+    "runtime~main.js.map": "/WebShopStore/static/js/runtime~main.ee00cc3f.js.map",
+    "static/css/2.f26135c0.chunk.css": "/WebShopStore/static/css/2.f26135c0.chunk.css",
+    "static/js/2.06753e03.chunk.js": "/WebShopStore/static/js/2.06753e03.chunk.js",
+    "static/js/2.06753e03.chunk.js.map": "/WebShopStore/static/js/2.06753e03.chunk.js.map",
+    "index.html": "/WebShopStore/index.html",
+    "precache-manifest.2e1ac5d435b49df56e285f8d5e1f7b72.js": "/WebShopStore/precache-manifest.2e1ac5d435b49df56e285f8d5e1f7b72.js",
+    "service-worker.js": "/WebShopStore/service-worker.js",
+    "static/css/2.f26135c0.chunk.css.map": "/WebShopStore/static/css/2.f26135c0.chunk.css.map",
+    "static/css/main.d606b191.chunk.css.map": "/WebShopStore/static/css/main.d606b191.chunk.css.map",
+    "static/media/App.scss": "/WebShopStore/static/media/banner_1024.accf9e47.jpg",
+    "static/media/all.min.css": "/WebShopStore/static/media/fa-solid-900.f14c3b2f.ttf"
   }
 }
