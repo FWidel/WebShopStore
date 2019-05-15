@@ -5,8 +5,11 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
+
   switch (action.type) {
+    
     case SET_SORT_TYPE:
+
       return {
         ...state,
         sortingType: action.payload

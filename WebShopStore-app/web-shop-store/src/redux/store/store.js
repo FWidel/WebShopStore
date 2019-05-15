@@ -3,12 +3,14 @@ import thunk from 'redux-thunk';
 
 import cartReducer from '../reducers/cartReducer';
 import sortingReducer from '../reducers/sortingReducer';
+import productsReducer from '../reducers/productsReducer';
 
 
 
 const rootReducer = combineReducers({
   cart: cartReducer,
-  sorting: sortingReducer
+  sorting: sortingReducer,
+  products : productsReducer
 });
 
 const initialState = {};

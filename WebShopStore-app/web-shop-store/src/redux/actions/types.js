@@ -4,3 +4,6 @@ export const DELETE_ITEM = 'DELETE_ITEM';
 export const UPDATE_PRICE = 'UPDATE_PRICE';
 export const DECREMENT_QTY = 'DECREMENT_QTY';
 export const SET_SORT_TYPE = 'SET_SORT_TYPE';
+export const ADD_PRODUCTS = 'ADD_PRODUCTS';
+export const SHOW_PRODUCTS = 'SHOW_PRODUCTS';
+export const DELETE_PRODUCTS = 'DELETE_PRODUCTS';

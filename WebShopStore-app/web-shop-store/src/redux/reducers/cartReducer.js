@@ -20,8 +20,7 @@ import {
           isOpen: !state.isOpen
         };
       case ADD_ITEM:
-      console.log(state, "additem")
-      console.log(action, "action")
+
         const isAlreadyAdded = state.cartItems.find(
           product => product.id === action.payload.id
         );

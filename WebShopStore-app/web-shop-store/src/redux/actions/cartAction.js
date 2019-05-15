@@ -11,6 +11,7 @@ import {
   };
   
   export const addItem = product => dispatch => {
+    
     dispatch({
       type: ADD_ITEM,
       payload: product

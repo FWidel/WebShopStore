@@ -30,7 +30,7 @@ class SortPrices extends Component {
 
 const mapStateToProps = state => {
   return {
-    sortBy: state.products
+    sortBy: state.producs
   };
 };
 
