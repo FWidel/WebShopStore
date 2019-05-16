@@ -10,7 +10,7 @@ class CartContainer extends Component {
   };
 
   render() {
-    const { cartItems, totalPrice } = this.props.cart;
+    const { cartItems } = this.props.cart;
     return (
       <div className="cart-icon ml-auto">
         <button type="button" onClick={this.showCart}>
@@ -18,9 +18,7 @@ class CartContainer extends Component {
           <span className="badge badge-primary">
             {cartItems.reduce((acc, curr) => acc + curr.qty, 0)}
           </span>
-          <span className="sr-only">products</span>
         </button>
-        <p>{totalPrice} zł</p>
       </div>
     );
   }

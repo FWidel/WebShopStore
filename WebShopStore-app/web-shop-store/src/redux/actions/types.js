@@ -7,3 +7,7 @@ export const SET_SORT_TYPE = 'SET_SORT_TYPE';
 export const ADD_PRODUCTS = 'ADD_PRODUCTS';
 export const SHOW_PRODUCTS = 'SHOW_PRODUCTS';
 export const DELETE_PRODUCTS = 'DELETE_PRODUCTS';
+
+
+export const SHOW_USER_PANEL = 'SHOW_USER_PANEL';
+export const SET_ACTIVE_PANEL = 'SET_ACTIVE_PANEL';

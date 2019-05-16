@@ -4,13 +4,15 @@ import thunk from 'redux-thunk';
 import cartReducer from '../reducers/cartReducer';
 import sortingReducer from '../reducers/sortingReducer';
 import productsReducer from '../reducers/productsReducer';
+import userReducer from '../reducers/userReducer';
 
 
 
 const rootReducer = combineReducers({
   cart: cartReducer,
   sorting: sortingReducer,
-  products : productsReducer
+  products : productsReducer,
+  user : userReducer
 });
 
 const initialState = {};

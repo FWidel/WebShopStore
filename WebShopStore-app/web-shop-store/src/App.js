@@ -12,6 +12,7 @@ import Navbar from './components/page/Navbar';
 import Footer from './components/page/Footer';
 import Cart from './components/cart/Cart';
 import Dashboard from './components/page/Dashboard';
+import UserPanel from './components/user/UserPanel';
 
 class App extends Component {
   render() {
@@ -30,6 +31,7 @@ class App extends Component {
                   smooth={true}
                   offset={-10}
                   duration={1200}
+                  spy={true}
                   onSetActive={this.handleSetActive}
                 >
                   Products
@@ -41,6 +43,8 @@ class App extends Component {
               <Dashboard />
             </section>
             <Cart />
+            <UserPanel />
+
             <Footer />
           </div>
         </Router>

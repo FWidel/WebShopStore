@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 
 import CartContainer from '../cart/CartContainer';
+import UserContainer from '../user/UserContainer';
 
 class Navbar extends Component {
   state = {
@@ -33,6 +34,7 @@ class Navbar extends Component {
            Graphics shop
           </button>
           <CartContainer />
+          <UserContainer />
         </div>
       </nav>
     );

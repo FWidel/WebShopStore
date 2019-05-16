@@ -104,19 +104,21 @@ class Pagination extends React.Component {
           <li
             className={`page-item ${pager.currentPage === 1 ? 'disabled' : ''}`}
           >
-            <a className="page-link" onClick={() => this.setPage(1)}>
+            <button className="page-link"
+             onClick={() => this.setPage(1)} >
+            
               First
-            </a>
+            </button>
           </li>
           <li
             className={`page-item ${pager.currentPage === 1 ? 'disabled' : ''}`}
           >
-            <a
+            <button
               className="page-link"
               onClick={() => this.setPage(pager.currentPage - 1)}
             >
               Previous
-            </a>
+            </button>
           </li>
           {pager.pages.map((page, index) => (
             <li
@@ -125,9 +127,9 @@ class Pagination extends React.Component {
                 pager.currentPage === page ? 'active' : ''
               }`}
             >
-              <a className="page-link" onClick={() => this.setPage(page)}>
+              <button className="page-link" onClick={() => this.setPage(page)}>
                 {page}
-              </a>
+              </button>
             </li>
           ))}
           <li
@@ -135,24 +137,24 @@ class Pagination extends React.Component {
               pager.currentPage === pager.totalPages ? 'disabled' : ''
             }`}
           >
-            <a
+            <button
               className="page-link"
               onClick={() => this.setPage(pager.currentPage + 1)}
             >
               Next
-            </a>
+            </button>
           </li>
           <li
             className={`page-item ${
               pager.currentPage === pager.totalPages ? 'disabled' : ''
             }`}
           >
-            <a
+            <button
               className="page-link"
               onClick={() => this.setPage(pager.totalPages)}
             >
               Last
-            </a>
+            </button>
           </li>
         </ul>
       </nav>

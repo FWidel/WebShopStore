@@ -12,7 +12,7 @@ class Cart extends Component {
     showCart();
   };
 
-  componentDidMount(){
+  componentDidMount() {
 
   }
 
@@ -29,20 +29,20 @@ class Cart extends Component {
           <Scrollbars style={{ height: '65%' }}>
             <div className="items">
               {cartItems.length === 0 ? (
-           
+
                 <h3>
                   Add some products to see details.
                 </h3>
               ) : (
-                <ul>
-                  {console.log(cartItems, "cartItems")}
-                  {cartItems.map(item => (
-                    <li key={uuid()}>
-                      <CartItem item={item} />
-                    </li>
-                  ))}
-                </ul>
-              )}
+                  <ul>
+                    {console.log(cartItems, "cartItems")}
+                    {cartItems.map(item => (
+                      <li key={uuid()}>
+                        <CartItem item={item} />
+                      </li>
+                    ))}
+                  </ul>
+                )}
             </div>
           </Scrollbars>
           <TotalAmount />
