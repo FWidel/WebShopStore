@@ -655,8 +655,9 @@ body {
 
     form {
       min-width:400px;
-      @media (max-width : 767px) {
-        min-width:250px;
+      @media (max-width : 468px) {
+        min-width:200px;
+        max-width:200px;
       }
     }
 
@@ -690,7 +691,7 @@ body {
         }
       }
 
-      @media (max-width: 355px) {
+      @media (max-width: 468px) {
         & {
           min-width:100px;
         }
@@ -723,7 +724,7 @@ body {
         }
       }
 
-      @media (max-width: 355px) {
+      @media (max-width: 468px) {
         & {
           min-width:100px;
         }

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
 import { connect } from 'react-redux';
 import { showUserPanel, setActivePanel } from './../../redux/actions/userPanelAction'
+import LogIn from './UserLogin';
+import UserRegister from './UserRegister';
 
 class UserPanel extends Component {
     showUserPanel = () => {
@@ -38,57 +40,20 @@ class UserPanel extends Component {
                              onClick={() => this.setActivePanel('log in')}
                              className={`${active == 'log in' ? 'login-tab active' : 'login-tab'}`}
                              >
-                                <span>Log In</span>
+                                <span>Register</span>
                             </div>
                             <div 
                              onClick={() => this.setActivePanel('register')}
                              className={`${active == 'register' ? 'register-tab active' : 'register-tab'}`}
                              >
-                                <span>Register</span>
+                                <span>Log in</span>
                             </div>
                             <form className={`${active == 'log in' ? '' : 'd-none'} `}>
-                                <div className="form-group input-group">
-                                    <div className="input-group-prepend">
-                                        <span className="input-group-text"> <i className="fa fa-envelope"></i> </span>
-                                    </div>
-                                    <input name="" className="form-control" placeholder="Email address" type="email" />
-                                </div>
-                                <div className="form-group input-group">
-                                    <div className="input-group-prepend">
-                                        <span className="input-group-text"> <i className="fa fa-lock"></i> </span>
-                                    </div>
-                                    <input className="form-control" placeholder="Create password" type="password" />
-                                </div>
-
-
-
-                                <div className="form-group">
-                                    <p className="personalData">Your personal data will be used to support your experience throughout
-                                         this website, to manage access to your account, and for other purposes described in ou
-                                     r <a href="#"
-                                            target="_blank">privacy policy</a>.</p>
-                                    <button type="submit" className="btn-custom btn-block"> Create Account  </button>
-                                </div>
+                            <UserRegister/>
                             </form>
 
                             <form className={`${active == 'register' ? '' : 'd-none'} `}>
-                                <div className="form-group input-group">
-                                    <div className="input-group-prepend">
-                                        <span className="input-group-text"> <i className="fa fa-envelope"></i> </span>
-                                    </div>
-                                    <input name="" className="form-control" placeholder="Email address" type="email" />
-                                </div>
-                                <div className="form-group input-group">
-                                    <div className="input-group-prepend">
-                                        <span className="input-group-text"> <i className="fa fa-lock"></i> </span>
-                                    </div>
-                                    <input className="form-control" placeholder="Password" type="password" />
-                                </div>
-
-
-                                <div className="form-group">
-                                    <button type="submit" className="btn-custom btn-block">Log in</button>
-                                </div>
+                               <LogIn/>
                             </form>
                         </article>
                     </div>

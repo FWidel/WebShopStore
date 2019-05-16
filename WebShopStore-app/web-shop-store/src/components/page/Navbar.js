@@ -31,7 +31,7 @@ class Navbar extends Component {
             type="button"
             onClick={this.scrollToTop}
             className="btn btn-link navbar-brand">
-           Graphics shop
+           Themes shop
           </button>
           <CartContainer />
           <UserContainer />
