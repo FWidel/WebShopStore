@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/WebShopStore/static/css/main.d2958ccb.chunk.css",
-    "main.js": "/WebShopStore/static/js/main.50dde424.chunk.js",
-    "main.js.map": "/WebShopStore/static/js/main.50dde424.chunk.js.map",
+    "main.css": "/WebShopStore/static/css/main.4441241a.chunk.css",
+    "main.js": "/WebShopStore/static/js/main.a26bb222.chunk.js",
+    "main.js.map": "/WebShopStore/static/js/main.a26bb222.chunk.js.map",
     "runtime~main.js": "/WebShopStore/static/js/runtime~main.ee00cc3f.js",
     "runtime~main.js.map": "/WebShopStore/static/js/runtime~main.ee00cc3f.js.map",
     "static/css/2.f26135c0.chunk.css": "/WebShopStore/static/css/2.f26135c0.chunk.css",
-    "static/js/2.06753e03.chunk.js": "/WebShopStore/static/js/2.06753e03.chunk.js",
-    "static/js/2.06753e03.chunk.js.map": "/WebShopStore/static/js/2.06753e03.chunk.js.map",
+    "static/js/2.07ee6a22.chunk.js": "/WebShopStore/static/js/2.07ee6a22.chunk.js",
+    "static/js/2.07ee6a22.chunk.js.map": "/WebShopStore/static/js/2.07ee6a22.chunk.js.map",
     "index.html": "/WebShopStore/index.html",
-    "precache-manifest.344784fe9b62491c8f419de5c206236a.js": "/WebShopStore/precache-manifest.344784fe9b62491c8f419de5c206236a.js",
+    "precache-manifest.862d6104a09092fa9c47ebee63004ba5.js": "/WebShopStore/precache-manifest.862d6104a09092fa9c47ebee63004ba5.js",
     "service-worker.js": "/WebShopStore/service-worker.js",
     "static/css/2.f26135c0.chunk.css.map": "/WebShopStore/static/css/2.f26135c0.chunk.css.map",
-    "static/css/main.d2958ccb.chunk.css.map": "/WebShopStore/static/css/main.d2958ccb.chunk.css.map",
-    "static/media/App.scss": "/WebShopStore/static/media/banner_1024.accf9e47.jpg",
+    "static/css/main.4441241a.chunk.css.map": "/WebShopStore/static/css/main.4441241a.chunk.css.map",
+    "static/media/App.scss": "/WebShopStore/static/media/background2.ed0debef.jpg",
     "static/media/all.min.css": "/WebShopStore/static/media/fa-solid-900.f14c3b2f.ttf"
   }
 }
