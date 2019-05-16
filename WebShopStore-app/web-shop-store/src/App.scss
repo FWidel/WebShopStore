@@ -58,7 +58,6 @@ body {
 }
 
 
-
 .spinner {
   text-align: center;
   padding: 50px 0;
@@ -128,6 +127,7 @@ body {
 }
 
 .navbar {
+ 
   transition: all 0.3s linear;
 
   .navbar-brand {
@@ -247,7 +247,7 @@ body {
 
 .header {
 
-  background: url(../src/img/banner_1024.jpg) no-repeat center;
+  background: url(../src/img/background2.jpg) no-repeat center;
   background-size: cover;
   min-height: 100vh;
   max-height: 100vh;
@@ -298,7 +298,7 @@ body {
 
 
 .products {
-  background-color: #a8a8a8;
+  background-color: #f8f9fa;
   padding: 50px 0;
 
   .options {
