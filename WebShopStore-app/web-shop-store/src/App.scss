@@ -662,10 +662,10 @@ body {
 
   
 
-    #register-tab {
-      position: relative;
+    .register-tab {
+      position: absolute;
       left: 50%;
-      top:-25px;
+      top:20px;
       min-width:200px;
       font-weight: 600;
       cursor: pointer;
@@ -676,7 +676,8 @@ body {
         color:black;
       }
 
-      &:hover {
+      &:hover,
+       &.active {
 
         width: 50px;
         border-bottom: 2px solid black;
@@ -697,7 +698,7 @@ body {
 
     }
 
-    #login-tab {
+    .login-tab {
       color:black;
       min-width:200px;
       position: relative;
@@ -708,7 +709,8 @@ body {
         color:black;
       }
 
-      &:hover {
+      &:hover,
+      &.active {
 
         width: 50px;
         border-bottom: 2px solid black;

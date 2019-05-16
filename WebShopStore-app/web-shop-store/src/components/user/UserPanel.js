@@ -34,10 +34,16 @@ class UserPanel extends Component {
                     <div className="card">
 
                         <article className="card-body mx-auto">
-                            <div id="login-tab" onClick={() => this.setActivePanel('log in')}>
+                            <div 
+                             onClick={() => this.setActivePanel('log in')}
+                             className={`${active == 'log in' ? 'login-tab active' : 'login-tab'}`}
+                             >
                                 <span>Log In</span>
                             </div>
-                            <div id="register-tab" onClick={() => this.setActivePanel('register')}>
+                            <div 
+                             onClick={() => this.setActivePanel('register')}
+                             className={`${active == 'register' ? 'register-tab active' : 'register-tab'}`}
+                             >
                                 <span>Register</span>
                             </div>
                             <form className={`${active == 'log in' ? '' : 'd-none'} `}>
