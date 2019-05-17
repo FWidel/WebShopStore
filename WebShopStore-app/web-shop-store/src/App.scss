@@ -747,6 +747,12 @@ body {
     .card {
       border: none;
       top: 100px;
+
+      @media (max-width: 767px) {
+        &{
+          top: 0px;
+        }
+      }
     }
 
     .close {
