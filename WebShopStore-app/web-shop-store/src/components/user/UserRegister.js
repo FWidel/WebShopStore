@@ -23,8 +23,8 @@ class UserRegister extends Component {
 
                 <div className="form-group">
                     <p className="personalData">Your personal data will be used to support your experience throughout
-                                         this website, to manage access to your account, and for other purposes described in our                                    r <a href="#"
-                            target="_blank">privacy policy</a>.</p>
+                                         this website, to manage access to your account, and for other purposes described in our
+                                         <a href="/policy" target="_blank">privacy policy</a>.</p>
                     <button type="submit" className="btn-custom btn-block"> Create Account  </button>
                 </div>
             </Fragment>
