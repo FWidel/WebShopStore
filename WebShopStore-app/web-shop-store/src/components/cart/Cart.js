@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+﻿import React, { Component } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
 import { connect } from 'react-redux';
 import { showCart, addItem } from './../../redux/actions/cartAction'
@@ -44,6 +44,16 @@ class Cart extends Component {
     this.setState({
       checkout: false
     });
+  }
+	
+buyItems= () => {
+    this.setState({
+      checkout: false
+    });
+  toast.success("Items bought successfuly, check your email.", {
+        autoClose: 3000,
+        position: toast.POSITION.TOP_CENTER;
+      });
   }
 
   componentDidMount() {
@@ -145,7 +155,7 @@ class Cart extends Component {
                   </ul>
                 </div>
                 <div className="text-center">
-                  <button type="button" className="btn-custom" onClick={() => this.goToCheckOut()}>
+                  <button type="button" className="btn-custom" onClick={() => this.buyItems()}>
                     Buy now
           </button>
                 </div>
