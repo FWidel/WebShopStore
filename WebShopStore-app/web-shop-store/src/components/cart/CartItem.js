@@ -53,8 +53,7 @@ class CartItem extends Component {
           type="button"
           className="close"
           onClick={this.onClick.bind(this, item.id)}
-        >
-          &#xd7;
+        >x
         </button>
       </React.Fragment>
     );

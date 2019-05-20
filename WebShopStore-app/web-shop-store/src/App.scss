@@ -283,7 +283,7 @@ body {
   h1 {
     font-family: 'Montserrat';
     width: 100%;
-    text-align: center;
+    text-align:  center;
     font-size: 40px;
 
     @media (max-width: 767px) {
@@ -748,17 +748,37 @@ body {
     }
 
     .close {
-      position: absolute;
+      position: relative;
       top: 0px;
-      right: 11%;
+      right: 0px;
       font-size: 50px;
       outline: none;
       transition: all 0.2s linear;
     }
 
-    h2 {
+      h2 {
       width: 50%;
       font-size: 0.66667rem;
+      padding-bottom: 1.11111rem;
+      margin-bottom: 1.11111rem;
+      color: #333;
+      z-index: 99;
+      float: left;
+      display: block;
+      cursor: pointer;
+
+      @media (max-width: 767px) {
+        & {
+          font-size: 20px;
+          margin-bottom: 10px;
+          padding-bottom: 15px;
+        }
+      }
+    }
+
+    .container h2{
+      width: 50%;
+      font-size: 2.66667rem;
       padding-bottom: 1.11111rem;
       margin-bottom: 1.11111rem;
       color: #333;
@@ -905,6 +925,8 @@ body {
         padding: 18px 15px;
       }
     }
+
+    
   }
 }
 
@@ -918,6 +940,16 @@ body {
   opacity: 1;
 }
 
-.card-body {
-  
+.lfgGgn li {
+  display: flex;
+  align-items: center;
+  text-transform: none;
+  font-size: 9px;
+  letter-spacing: 0.2px;
+  margin: 7.5px 3.5px;
+}
+
+.lfgGgn img {
+  height: 24px;
+  margin: 0px 4px;
 }
