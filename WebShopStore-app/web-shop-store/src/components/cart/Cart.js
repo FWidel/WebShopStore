@@ -52,7 +52,7 @@ buyItems= () => {
     });
   toast.success("Items bought successfuly, check your email.", {
         autoClose: 3000,
-        position: toast.POSITION.TOP_CENTER;
+        position: toast.POSITION.TOP_CENTER
       });
   }
 
