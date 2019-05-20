@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/WebShopStore/static/css/main.b81cff9c.chunk.css",
+    "main.css": "/WebShopStore/static/css/main.9354f0e0.chunk.css",
     "main.js": "/WebShopStore/static/js/main.4d206452.chunk.js",
     "main.js.map": "/WebShopStore/static/js/main.4d206452.chunk.js.map",
     "runtime~main.js": "/WebShopStore/static/js/runtime~main.ee00cc3f.js",
@@ -9,10 +9,11 @@
     "static/js/2.0818a3b4.chunk.js": "/WebShopStore/static/js/2.0818a3b4.chunk.js",
     "static/js/2.0818a3b4.chunk.js.map": "/WebShopStore/static/js/2.0818a3b4.chunk.js.map",
     "index.html": "/WebShopStore/index.html",
-    "precache-manifest.c46f766a58ede9d06d6966684dd912a2.js": "/WebShopStore/precache-manifest.c46f766a58ede9d06d6966684dd912a2.js",
+    "precache-manifest.4acaaf3824268ef647f799eb31c00aa0.js": "/WebShopStore/precache-manifest.4acaaf3824268ef647f799eb31c00aa0.js",
     "service-worker.js": "/WebShopStore/service-worker.js",
     "static/css/2.733f9ef9.chunk.css.map": "/WebShopStore/static/css/2.733f9ef9.chunk.css.map",
-    "static/css/main.b81cff9c.chunk.css.map": "/WebShopStore/static/css/main.b81cff9c.chunk.css.map",
+    "static/css/main.9354f0e0.chunk.css.map": "/WebShopStore/static/css/main.9354f0e0.chunk.css.map",
+    "static/media/App.scss": "/WebShopStore/static/media/background2.ed0debef.jpg",
     "static/media/all.min.css": "/WebShopStore/static/media/fa-solid-900.f14c3b2f.ttf"
   }
 }
