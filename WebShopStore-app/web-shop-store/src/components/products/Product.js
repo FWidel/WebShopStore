@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addItem } from '../../redux/actions/cartAction';
-import uuid from 'uuid';
 import { withStyles } from '@material-ui/core/styles';
 import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -52,9 +51,7 @@ class Product extends Component {
             <p className="price">{product.price} zł</p>
             <ul className="sizes">
             <li>Resolutions:</li>
-              {product.sizes.map(size => (
-                <li key={uuid()}>{size}</li>
-              ))}
+            {product.size}
             </ul>
             <div className="text-center">
               <button

@@ -13,8 +13,21 @@ class Products extends Component {
     };
 
     componentDidMount() {
+        var obj = {
+            crossDomain: true,
+            method: 'GET' ,
+            mode : 'no-cors'
+          };
         const { addProducts } = this.props;
-        addProducts(fakeProducts);
+        fetch(`http://localhost:8080/products`, {
+             "Access-Control-Allow-Origin": "*",
+            "mode": "no-cors"})
+    // We get the API response and receive data in JSON format...
+    .then(response => response.json())
+    // ...then we update the users state
+    .then(data =>  addProducts(data))
+    // Catch any errors we hit and update the app
+    .catch(error => console.log(error));
     }
 
     onChangePage = pageOfItems => this.setState({ pageOfItems: pageOfItems });

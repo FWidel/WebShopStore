@@ -22,7 +22,10 @@ class Navbar extends Component {
     scroll.scrollToTop();
   };
 
+  
+
   render() {
+
     const { isTop } = this.state;
     return (
       <nav className={`navbar fixed-top ${!isTop ? 'scrolled' : ''}`}>
@@ -31,7 +34,8 @@ class Navbar extends Component {
             type="button"
             onClick={this.scrollToTop}
             className="btn btn-link navbar-brand">
-           Themes shop
+            <img src="img/tshop_black.png" alt="logo" width="35px" height="45px" />
+           hemes shop
           </button>
           <CartContainer />
           <UserContainer />
