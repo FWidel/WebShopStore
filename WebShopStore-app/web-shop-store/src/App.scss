@@ -264,7 +264,7 @@ body {
 
 .header {
 
-  background: url(/img/background2.jpg) no-repeat center;
+  background: url(img/background2.jpg) no-repeat center;
   background-size: cover;
   min-height: 100vh;
   max-height: 100vh;
@@ -325,7 +325,7 @@ body {
       border: 1px solid #ebebeb;
       appearance: none;
       position: relative;
-      background: #fff url(/img/arrow.png) no-repeat center right 10px;
+      background: #fff url(img/arrow.png) no-repeat center right 10px;
       background-size: 12px;
 
       &:focus {
