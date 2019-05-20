@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store/store';
 import { Link } from 'react-scroll';
+import 'react-toastify/dist/ReactToastify.css';
+import {   ToastContainer } from 'react-toastify'
 
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -61,8 +63,7 @@ class App extends Component {
               </Switch>
             <Cart />
             <UserPanel />
-
-
+            <ToastContainer />
             <Footer />
           </div>
         </Router>

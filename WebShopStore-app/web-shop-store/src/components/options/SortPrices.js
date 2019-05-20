@@ -11,7 +11,7 @@ class SortPrices extends Component {
   render() {
     return (
       <div className="col-md-3 ml-auto">
-        <div className="form-group">
+        {/* <div className="form-group">
           <label htmlFor="sort">Sort by:</label>
           <select
             className="form-control"
@@ -22,7 +22,7 @@ class SortPrices extends Component {
             <option value="asc">Lowest price</option>
             <option value="desc">Highest price</option>
           </select>
-        </div>
+        </div> */}
       </div>
     );
   }

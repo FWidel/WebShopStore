@@ -11,3 +11,7 @@ export const DELETE_PRODUCTS = 'DELETE_PRODUCTS';
 
 export const SHOW_USER_PANEL = 'SHOW_USER_PANEL';
 export const SET_ACTIVE_PANEL = 'SET_ACTIVE_PANEL';
+
+
+export const SET_TOKEN = 'SET_TOKEN';
+export const GET_TOKEN = 'GET_TOKEN';

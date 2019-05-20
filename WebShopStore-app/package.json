@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
+    "react-scroll": "^1.7.11",
+    "redux": "^4.0.1"
+  }
+}

@@ -1,42 +1,23 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addItem } from '../../redux/actions/cartAction';
-import { withStyles } from '@material-ui/core/styles';
-import Snackbar from '@material-ui/core/Snackbar';
-import IconButton from '@material-ui/core/IconButton';
-import CloseIcon from '@material-ui/icons/Close';
+import {toast}  from 'react-toastify';
 
-const styles = theme => ({
-  close: {
-    width: theme.spacing.unit * 4,
-    height: theme.spacing.unit * 4
-  }
-});
 
 class Product extends Component {
-  state = {
-    open: false
-  };
-  addClick = product => {
-
-    this.setState({ open: true });
+ 
+  addItem = product => {
+    toast.info("Item added successfuly!",{ 
+      autoClose: 2000,
+      position: toast.POSITION.BOTTOM_CENTER });
     const { addItem } = this.props;
     addItem(product);
   };
 
 ;
 
-  handleClose = (event, reason) => {
-    if (reason === 'clickaway') {
-      return;
-    }
-
-    this.setState({ open: false });
-  };
-
   render() {
     const { product } = this.props;
-    const { classes } = this.props;
     
         return (
       <div className="col-sm-6 col-md-4">
@@ -56,36 +37,12 @@ class Product extends Component {
             <div className="text-center">
               <button
                 className="btn-custom"
-                onClick={this.addClick.bind(this, product)}>
+                onClick={this.addItem.bind(this, product)}>
                 Add to cart
               </button>
             </div>
           </div>
         </div>
-        <Snackbar
-          anchorOrigin={{
-            vertical: 'bottom',
-            horizontal: 'left'
-          }}
-          open={this.state.open}
-          autoHideDuration={2000}
-          onClose={this.handleClose}
-          ContentProps={{
-            'aria-describedby': 'message-id'
-          }}
-          message={<span id="message-id">Item added!</span>}
-          action={[
-            <IconButton
-              key="close"
-              aria-label="Close"
-              color="inherit"
-              className={classes.close}
-              onClick={this.handleClose}
-            >
-              <CloseIcon />
-            </IconButton>
-          ]}
-        />
       </div>
     );
   }
@@ -94,4 +51,4 @@ class Product extends Component {
 export default connect(
   null,
   { addItem }
-)(withStyles(styles)(Product));
+)(Product);

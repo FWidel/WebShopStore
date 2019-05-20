@@ -1,32 +1,23 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
 import { addProducts } from '../../redux/actions/productsAction'
-
 import Product from './Product';
 import Pagination from './Pagination';
 import Spinner from '../page/Spinner';
-import fakeProducts from './fakeProduct';
+
 class Products extends Component {
     state = {
         pageOfItems: []
     };
 
     componentDidMount() {
-        var obj = {
-            crossDomain: true,
-            method: 'GET' ,
-            mode : 'no-cors'
-          };
+  
         const { addProducts } = this.props;
-        fetch(`http://localhost:8080/products`, {
-             "Access-Control-Allow-Origin": "*",
-            "mode": "no-cors"})
-    // We get the API response and receive data in JSON format...
+
+    var targetUrl = 'https://webshopstore.herokuapp.com/products'
+        fetch(targetUrl)
     .then(response => response.json())
-    // ...then we update the users state
     .then(data =>  addProducts(data))
-    // Catch any errors we hit and update the app
     .catch(error => console.log(error));
     }
 
@@ -35,10 +26,7 @@ class Products extends Component {
     render() {
 
         const { products } = this.props.products;
-        const {sort } = this.props;
 
-        console.log(this.props, "props")
-        console.log(sort, "state")
         if (products.length > 0) {
             return (
                 <div className="products-wrapper">

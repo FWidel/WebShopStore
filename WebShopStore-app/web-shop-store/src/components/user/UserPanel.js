@@ -2,10 +2,15 @@ import React, { Component } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
 import { connect } from 'react-redux';
 import { showUserPanel, setActivePanel } from './../../redux/actions/userPanelAction'
-import LogIn from './UserLogin';
-import UserRegister from './UserRegister';
+import { setToken, getToken } from './../../redux/actions/authAction';
+import LoginRegister from '../user/LoginRegister';
+import LogedUser from '../user/LoggedUser';
 
 class UserPanel extends Component {
+
+    state = {
+        logged: false
+    };
     showUserPanel = () => {
         const { showUserPanel } = this.props;
         showUserPanel();
@@ -17,15 +22,24 @@ class UserPanel extends Component {
     };
 
     componentDidMount() {
+        const { setToken } = this.props;
+        setToken(localStorage.getItem("authorization"))
+
+        const token  = localStorage.getItem("authorization");
+        console.log("token",token);
+        if (token) {
+            this.setState({
+                logged: true
+            });
+        }
+
 
     }
 
     render() {
         const { isOpen } = this.props.user;
-        const { active } = this.props.user;
-        console.log(active);
 
-
+        console.log(this.state.logged);
         return (
             <div className={`user-panel ${!isOpen ? 'transparent' : 'active'} `}>
                 <div className={`user-inside ${isOpen ? 'active' : ''}`}>
@@ -34,29 +48,13 @@ class UserPanel extends Component {
                         </div>
                     </Scrollbars>
                     <div className="card">
-
-                        <article className="card-body mx-auto">
-                            <div
-                                onClick={() => this.setActivePanel('log in')}
-                                className={`${active === 'log in' ? 'login-tab active' : 'login-tab'}`}
-                            >
-                                <span>Register</span>
-                            </div>
-                            <div
-                                onClick={() => this.setActivePanel('register')}
-                                className={`${active === 'register' ? 'register-tab active' : 'register-tab'}`}
-                            >
-                                <span>Log in</span>
-                            </div>
-                            <form className={`${active === 'log in' ? '' : 'd-none'} `}>
-                                <UserRegister />
-                            </form>
-
-                            <form className={`${active === 'register' ? '' : 'd-none'} `}>
-                                <LogIn />
-                            </form>
-                        </article>
-                    </div>
+                    {!this.state.logged&&(
+                        <LoginRegister />
+                    )}
+                    {this.state.logged&&(
+                        <LogedUser/>
+                    )}
+                </div>
 
                 </div>
             </div>
@@ -65,10 +63,12 @@ class UserPanel extends Component {
 }
 
 const mapStateToProps = state => ({
-    user: state.user
+    user: state.user,
+    auth: state.auth
+
 });
 
 export default connect(
     mapStateToProps,
-    { showUserPanel, setActivePanel }
+    { showUserPanel, setActivePanel, setToken, getToken }
 )(UserPanel);

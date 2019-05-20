@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { showUserPanel } from '../../redux/actions/userPanelAction';
-import PropTypes from 'prop-types';
 
-class UserContainer extends Component {
+class UserAccount extends Component {
   showUserPanel = () => {
     const { showUserPanel } = this.props;
     showUserPanel();
   };
 
   render() {
-
 
 
     return (
@@ -23,9 +21,7 @@ class UserContainer extends Component {
   }
 }
 
-UserContainer.propTypes = {
-  showUserPanel: PropTypes.func.isRequired
-};
+
 
 const mapStateToProps = state => ({
   userPanel: state.userPanel
@@ -34,4 +30,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { showUserPanel }
-)(UserContainer);
+)(UserAccount);
