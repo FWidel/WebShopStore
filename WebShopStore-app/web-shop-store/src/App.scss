@@ -23,7 +23,7 @@ body {
   &:hover,
   &:focus {
     background-color: #fff;
-    color: #333 !important;
+    color: #333;
     text-decoration: none;
   }
 
@@ -182,13 +182,13 @@ body {
     .user-icon {
 
       p,
-      button {
+      a {
         color: white;
       }
     }
 
     .cart-icon button:hover,
-    .user-icon button:hover {
+    .user-icon a:hover {
       color: rgb(46, 127, 165);
     }
 
@@ -197,7 +197,7 @@ body {
 
 
 .cart-icon button,
-.user-icon button {
+.user-icon a {
   background: transparent;
   border: 0;
   color: #ffffff;
@@ -261,52 +261,45 @@ body {
 }
 
 
+.home {
 
-.header {
 
-  background: url(img/background2.jpg) no-repeat center;
-  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   min-height: 100vh;
   max-height: 100vh;
-
-  .hero {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    max-height: 100vh;
-    color: #fff;
-  }
-
+  color: #fff;
 
   h1 {
     font-family: 'Montserrat';
     width: 100%;
     text-align:  center;
     font-size: 40px;
-
+  
     @media (max-width: 767px) {
       & {
         font-size: 40px;
       }
     }
   }
-
+  
   h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 80px;
     letter-spacing: 1px;
-
+  
     @media (max-width: 767px) {
       & {
         font-size: 22px;
       }
     }
   }
-
 }
+
+
 
 
 
@@ -378,11 +371,6 @@ body {
     .page-item.active .page-link {
       background-color: #76b6ff;
       border-color: #76b6ff;
-    }
-
-
-    .page-link {
-      border-radius: 0 !important;
     }
 
     .page-link:hover {
@@ -952,4 +940,11 @@ body {
 .lfgGgn img {
   height: 24px;
   margin: 0px 4px;
+}
+
+.app{
+  background: url(img/background2.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  max-height: 100vh;
 }

@@ -30,13 +30,13 @@ class Navbar extends Component {
     return (
       <nav className={`navbar fixed-top ${!isTop ? 'scrolled' : ''}`}>
         <div className="container">
-          <button
-            type="button"
+          <a
+             href="/"
             onClick={this.scrollToTop}
             className="btn btn-link navbar-brand">
             <img src="img/tshop_black.png" alt="logo" width="35px" height="45px" />
            hemes shop
-          </button>
+          </a>
           <CartContainer />
           <UserContainer />
         </div>

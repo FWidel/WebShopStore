@@ -38,11 +38,9 @@ class UserPanel extends Component {
 
     render() {
         const { isOpen } = this.props.user;
-
-        console.log(this.state.logged);
         return (
-            <div className={`user-panel ${!isOpen ? 'transparent' : 'active'} `}>
-                <div className={`user-inside ${isOpen ? 'active' : ''}`}>
+            <div className="user-panel active">
+                <div className="user-inside active">
                     <Scrollbars style={{ height: '65%' }}>
                         <div className="items">
                         </div>

@@ -15,9 +15,9 @@ class UserContainer extends Component {
 
     return (
       <div className="user-icon">
-        <button type="button" onClick={this.showUserPanel}>
+        <a href="/account">
           <i className="fa fa-user" /> 
-        </button>
+        </a>
       </div>
     );
   }

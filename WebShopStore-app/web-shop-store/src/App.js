@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store/store';
-import { Link } from 'react-scroll';
 import 'react-toastify/dist/ReactToastify.css';
-import {   ToastContainer } from 'react-toastify'
+import { ToastContainer } from 'react-toastify'
 
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,56 +12,37 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Navbar from './components/page/Navbar';
 import Footer from './components/page/Footer';
 import Cart from './components/cart/Cart';
-import Dashboard from './components/page/Dashboard';
+import Home from './components/home/Home';
 import UserPanel from './components/user/UserPanel';
 import UserAccount from './components/user/UserAccount';
+import Pagination from './components/products/Pagination';
 
 class App extends Component {
   state = {
     didMount: false
   };
 
-  componentDidMount(){
+  componentDidMount() {
     setTimeout(() => {
-         this.setState({didMount: true})
-     }, 0)
- }
+      this.setState({ didMount: true })
+    }, 0)
+  }
 
 
   render() {
 
-    const {didMount} = this.state
+    const { didMount } = this.state
     return (
       <Provider store={store}>
         <Router>
-          <div className={`App fade-in ${didMount && 'visible'}`}>
-            <header className="header">
-              <Navbar />
-              <div className="container hero">
-                <h1>Welcome to our themes store!</h1>
-                <h2>Check our products!</h2>
-                <Link
-                  to="products"
-                  className="btn-main"
-                  smooth={true}
-                  offset={-10}
-                  duration={1200}
-                  spy={true}
-                  onSetActive={this.handleSetActive}
-                >
-                  Products
-                  <i className="fas fa-chevron-down" />
-                </Link>
-              </div>
-            </header>
-            <section name="products" className="products" id="products">
-              <Dashboard />
-            </section>
+          <div className={`app fade-in ${didMount && 'visible'}`}>
+            <Navbar />
             <Switch>
-            <Route path='/account' exact={true} component={UserAccount}/>
-              </Switch>
+              <Route path='/' exact={true} component={Home} />
+              <Route path='/account' component={UserPanel} />
+
+            </Switch>
             <Cart />
-            <UserPanel />
             <ToastContainer />
             <Footer />
           </div>
