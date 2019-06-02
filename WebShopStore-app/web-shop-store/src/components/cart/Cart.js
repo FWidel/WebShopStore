@@ -86,7 +86,7 @@ class Cart extends Component {
                 {totalPrice} zł
         </p>
               <div className="text-center">
-                <a className="btn-custom" href="/checkout" >
+                <a className="btn-custom" href="/WebShopStore/checkout" >
                   Go to checkout
           </a>
               </div>

@@ -46,7 +46,7 @@ showDropdownMenu(event) {
     this.state.logged ? 
     this.setState({ displayMenu: true }, () => {
     document.addEventListener('click', this.hideDropdownMenu);
-    }) : window.location.href="/account";
+    }) : window.location.href="/WebShopStore/account";
   }
 
   hideDropdownMenu() {
@@ -64,8 +64,8 @@ showDropdownMenu(event) {
 
           { this.state.displayMenu ? (
           <ul>
-         <li><a href="/account">My orders</a></li>
-         <li><a href="/settings">Password</a></li>
+         <li><a href="/WebShopStore/account">My orders</a></li>
+         <li><a href="/WebShopStore/settings">Password</a></li>
          <li onClick={this.logOut}>Log Out </li>
           </ul>
         ):
