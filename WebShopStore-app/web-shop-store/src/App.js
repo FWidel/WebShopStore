@@ -40,9 +40,9 @@ class App extends Component {
             <Navbar />
             <Switch>
               <Route path='/' exact={true} component={Home} />
-              <Route path='/account' component={UserPanel} />
-              <Route path='/checkout' component={Checkout} />
-              <Route path='/settings' component={Settings} />
+              <Route path='/WebShopStore/account' component={UserPanel} />
+              <Route path='/WebShopStore/checkout' component={Checkout} />
+              <Route path='/WebShopStore/settings' component={Settings} />
 
             </Switch>
             <Cart />
