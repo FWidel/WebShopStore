@@ -26,7 +26,7 @@ class Checkout extends Component {
         const { cartItems } = this.props.cart;
        const total =  cartItems.reduce((acc, val) => acc + val.qty * val.price, 0).toFixed(2)
       
-        fetch('http://localhost:8080/order', {
+        fetch('https://webshopstore.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

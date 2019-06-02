@@ -12,7 +12,7 @@ class LoggedUser extends Component {
     };
     getOrders() {
 
-        fetch('http://localhost:8080/orders', {
+        fetch('https://webshopstore.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

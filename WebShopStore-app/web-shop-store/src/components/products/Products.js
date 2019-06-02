@@ -13,8 +13,9 @@ class Products extends Component {
     componentDidMount() {
   
         const { addProducts } = this.props;
+     // http://localhost:8080
      // https://webshopstore.herokuapp.com
-    var targetUrl = 'http://localhost:8080/products'
+    var targetUrl = 'https://webshopstore.herokuapp.com/products'
         fetch(targetUrl)
     .then(response => response.json())
     .then(data =>  addProducts(data))

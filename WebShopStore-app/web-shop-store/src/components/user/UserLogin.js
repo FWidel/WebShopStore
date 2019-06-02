@@ -16,7 +16,7 @@ class LogIn extends Component {
 
     login(event) {
         event.preventDefault();
-        fetch('http://localhost:8080/login', {
+        fetch('https://webshopstore.herokuapp.com/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

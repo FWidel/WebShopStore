@@ -31,7 +31,7 @@ class Settings extends Component {
 
     changePassword(event) {
         event.preventDefault();
-        fetch('http://localhost:8080/change', {
+        fetch('https://webshopstore.herokuapp.com/change', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -16,7 +16,7 @@ class UserRegister extends Component {
     register(event) {
         
         event.preventDefault();
-        fetch('http://localhost:8080/register', {
+        fetch('https://webshopstore.herokuapp.com/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
