@@ -34,8 +34,7 @@ class Navbar extends Component {
              href="/"
             onClick={this.scrollToTop}
             className="btn btn-link navbar-brand">
-            <img src="img/tshop_black.png" alt="logo" width="35px" height="45px" />
-           hemes shop
+            <img src="img/tshop_black.png" alt="logo" width="35px" height="45px" />hemes shop
           </a>
           <CartContainer />
           <UserContainer />

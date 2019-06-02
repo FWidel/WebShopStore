@@ -23,7 +23,7 @@ class Cart extends Component {
 
     if (!token) {
       toast.warn("Log in first!", {
-        autoClose: 3000,
+        autoClose: 1000,
         position: toast.POSITION.TOP_RIGHT
       });
     } else {
@@ -36,30 +36,16 @@ class Cart extends Component {
 
   }
 
-  close = () => {
-
-  }
-
   closeCheckout = () => {
     this.setState({
       checkout: false
     });
   }
+
+
+
+
 	
-buyItems= () => {
-    this.setState({
-      checkout: false
-    });
-  toast.success("Items bought successfuly, check your email.", {
-        autoClose: 3000,
-        position: toast.POSITION.TOP_CENTER
-      });
-  }
-
-  componentDidMount() {
-
-  }
-
   render() {
     const { isOpen, cartItems } = this.props.cart;
     const { totalPrice } = this.props.cart;
@@ -100,9 +86,9 @@ buyItems= () => {
                 {totalPrice} zł
         </p>
               <div className="text-center">
-                <button type="button" className="btn-custom" onClick={() => this.goToCheckOut()}>
+                <a className="btn-custom" href="/checkout" >
                   Go to checkout
-          </button>
+          </a>
               </div>
             </div>
           </div>

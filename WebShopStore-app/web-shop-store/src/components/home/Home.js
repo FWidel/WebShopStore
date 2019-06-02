@@ -12,7 +12,7 @@ class Home extends Component {
                 <h2>Check our products!</h2>
                 <Link
                   to="products"
-                  className="btn-main"
+                  className="btn-main__products"
                   smooth={true}
                   offset={-10}
                   duration={1200}

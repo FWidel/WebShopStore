@@ -6,11 +6,17 @@ import {
     DECREMENT_QTY
   } from '../actions/types';
   
+
   const initialState = {
     isOpen: false,
     cartItems: [],
     totalPrice: 0,
   };
+
+  let storageCartItems = JSON.parse(localStorage.getItem('products'))
+  if( storageCartItems !== null){
+    initialState.cartItems = storageCartItems;
+  }
   
   export default (state = initialState, action) => {
     switch (action.type) {
@@ -51,7 +57,6 @@ import {
           )
         };
       case UPDATE_PRICE:
-      
         return {
           ...state,
           totalPrice: state.cartItems

@@ -14,8 +14,9 @@ import Footer from './components/page/Footer';
 import Cart from './components/cart/Cart';
 import Home from './components/home/Home';
 import UserPanel from './components/user/UserPanel';
-import UserAccount from './components/user/UserAccount';
-import Pagination from './components/products/Pagination';
+import Checkout from './components/checkout/Checkout';
+
+import Settings from './components/user/Settings';
 
 class App extends Component {
   state = {
@@ -40,6 +41,8 @@ class App extends Component {
             <Switch>
               <Route path='/' exact={true} component={Home} />
               <Route path='/account' component={UserPanel} />
+              <Route path='/checkout' component={Checkout} />
+              <Route path='/settings' component={Settings} />
 
             </Switch>
             <Cart />

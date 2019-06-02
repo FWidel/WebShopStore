@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Scrollbars } from 'react-custom-scrollbars';
 import { connect } from 'react-redux';
 import { showUserPanel, setActivePanel } from './../../redux/actions/userPanelAction'
 import { setToken, getToken } from './../../redux/actions/authAction';
@@ -32,19 +31,13 @@ class UserPanel extends Component {
                 logged: true
             });
         }
-
-
     }
 
     render() {
-        const { isOpen } = this.props.user;
+
         return (
             <div className="user-panel active">
                 <div className="user-inside active">
-                    <Scrollbars style={{ height: '65%' }}>
-                        <div className="items">
-                        </div>
-                    </Scrollbars>
                     <div className="card">
                     {!this.state.logged&&(
                         <LoginRegister />

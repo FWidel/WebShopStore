@@ -33,6 +33,8 @@ import {
     };
   };
   
+
+
   export const decrement = product => dispatch => {
     dispatch({
       type: DECREMENT_QTY,

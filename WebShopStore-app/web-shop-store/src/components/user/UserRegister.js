@@ -16,26 +16,25 @@ class UserRegister extends Component {
     register(event) {
         
         event.preventDefault();
-        fetch('https://webshopstore.herokuapp.com/register', {
+        fetch('http://localhost:8080/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 login: this.state.login,
-                password: this.state.password,
-                id : 5
+                password: this.state.password
             })
         })
       .then(response => response.json())
       .then(response => {
              if(response.message !== "OK"){
               toast.error(response.message,{ 
-                  autoClose: 2000,
+                  autoClose: 1000,
                   position: toast.POSITION.TOP_CENTER });
           }else{
             toast.success("Registered successfuly!",{ 
-                autoClose: 2000,
+                autoClose: 1000,
                 position: toast.POSITION.TOP_CENTER });
                 this.setState({
                     password: "",

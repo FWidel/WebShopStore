@@ -8,10 +8,13 @@ class Product extends Component {
  
   addItem = product => {
     toast.info("Item added successfuly!",{ 
-      autoClose: 2000,
+      autoClose: 1000,
       position: toast.POSITION.BOTTOM_CENTER });
     const { addItem } = this.props;
     addItem(product);
+
+    const { cartItems } = this.props.cart;
+    localStorage.setItem('products', JSON.stringify(cartItems));
   };
 
 ;
@@ -48,7 +51,11 @@ class Product extends Component {
   }
 }
 
+const mapStateToProps = state => ({
+  cart: state.cart
+});
+
 export default connect(
-  null,
+  mapStateToProps,
   { addItem }
 )(Product);

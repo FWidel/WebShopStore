@@ -26,6 +26,7 @@ class CartItem extends Component {
 
   render() {
     const { item } = this.props;
+    const { checkout} = this.props;
 
     return (
       <React.Fragment>
@@ -37,13 +38,15 @@ class CartItem extends Component {
           <p>
             Quantity:{' '}
             <button
-              className="btn subtract"
+              className={checkout === "true" ? "d-none" :"btn subtract"}
               onClick={this.decrement.bind(this, item.id)}
             >
               -
             </button>
             {item.qty}
-            <button className="btn add" onClick={this.increment.bind(this)}>
+            <button 
+            className={checkout === "true" ? "d-none" :"btn add"}
+             onClick={this.increment.bind(this)}>
               +
             </button>
           </p>
@@ -51,7 +54,7 @@ class CartItem extends Component {
         <small className="price">{(item.price * item.qty)} zł</small>
         <button
           type="button"
-          className="close"
+          className={checkout === "true" ? "d-none" :"close"}
           onClick={this.onClick.bind(this, item.id)}
         >x
         </button>

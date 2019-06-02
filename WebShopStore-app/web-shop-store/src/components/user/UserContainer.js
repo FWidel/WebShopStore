@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { showUserPanel } from '../../redux/actions/userPanelAction';
 import PropTypes from 'prop-types';
+import Dropdown from './../options/Dropdown';
 
 class UserContainer extends Component {
   showUserPanel = () => {
@@ -9,15 +10,13 @@ class UserContainer extends Component {
     showUserPanel();
   };
 
+
+
   render() {
-
-
-
     return (
       <div className="user-icon">
-        <a href="/account">
-          <i className="fa fa-user" /> 
-        </a>
+        <Dropdown></Dropdown>
+       
       </div>
     );
   }
